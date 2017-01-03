@@ -1,19 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>guone</title>
-
-
-<!-- Add fancyBox main JS and CSS files -->
-
+<link href="//cdn.muicss.com/mui-0.9.7/css/mui.min.css" rel="stylesheet" type="text/css" />
+<link href="lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<title>GuOne</title>
 </head>
+<body class="hide-sidedrawer">
+	<div id="sidedrawer" class="mui--no-user-select">
+		<div id="sidedrawer-brand" class="mui--appbar-line-height">
+			<span class="mui--text-title">GuOne</span>
+		</div>
+		<div class="mui-divider"></div>
+		<ul>
+			<li><strong>首页</strong>
+				<ul>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+				</ul></li>
+			<li><strong>下载</strong></li>
+			<li><strong>关于我们</strong>
+				<ul>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+				</ul></li>
+		</ul>
+	</div>
+	<header id="header">
+		<div class="mui-appbar mui--appbar-line-height">
+			<div class="mui-container-fluid">
+				<a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a> <a class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+				<span class="mui--text-title mui--visible-xs-inline-block">GuOne</span>
+			</div>
+		</div>
+	</header>
+	<div id="content-wrapper">
+		<div id="appbar-placeholder" class="mui--appbar-height"></div>
 
-<body>
+		<div id="f-hero">
+			<div id="f-hero-welcome" class="mui-container-fluid mui--text-center">
+				<img id="f-mui-logo" src="imgs/guone.png" />
+				<div class="mui--text-title mui--text-light">人类文明和历史的缩影</div>
+				<div id="f-buttons">
+					<a id="f-download-btn" class="mui-btn" href="./download/v1.0.0.apk">下载 v1.0.0<span
+						class="mui-btn__ripple-container"><span class="mui-ripple"></span></span></a> <a class="mui-btn">在GitHub上查看<span class="mui-btn__ripple-container"><span
+							class="mui-ripple"></span></span></a>
+				</div>
+				<br>
+				<div class="mui--text-center">
+					<a id="announcement-link" class="mui--text-white mui--text-body2">扫描上方二维码下载手机app!</a>
+				</div>
+			</div>
+			<div class="mui--appbar-height"></div>
+		</div>
+		<div class="mui-divider"></div>
+		<div class="f-bg-medium">
+			<div class="mui-container-fluid">
+				<div class="mui-row">
+					<div class="mui-col-sm-10 mui-col-sm-offset-1">
+						<div class="space-top"></div>
+						<div class="mui-row">
+							<div class="mui-col-xs-12 mui-col-sm-8 mui-col-md-4">
+								<h3 class="mui--text-title">XXXX</h3>
+								<p>MUI凭着其极小的体积，帮助网页尽可能快地加载：</p>
+								<ul class="mui-list--unstyled">
+									<li>mui.min.css - <strong>6.6KB</strong> (gzipped)
+									</li>
+									<li>mui.min.js - <strong>5.4KB</strong> (gzipped)
+									</li>
+								</ul>
+							</div>
+							<div class="mui-col-xs-12 mui-col-sm-8 mui-col-md-4">
+								<h3 class="mui--text-title">XXX</h3>
+								<p>MUI CSS可以在使用SASS源码时，通过GitHub或Bower来轻松定制它。自定义的范围包括响应断点，默认字体设置和使用Material Design颜色等等。</p>
+							</div>
+							<div class="mui-col-xs-12 mui-col-sm-8 mui-col-md-4">
+								<h3 class="mui--text-title">XXX</h3>
+								<p>MUI CSS/JS并不依赖任何其他的程序。</p>
+							</div>
+						</div>
+						<div class="space-bottom"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="f-bg-dark">
+			<div class="mui-container-fluid">
+				<div class="mui-row">
+					<div class="mui-col-sm-10 mui-col-sm-offset-1">
+						<div class="space-top"></div>
+						<div class="mui-row">
+							<div class="mui-col-sm-6">
+								<h3 class="mui--text-title mui--text-light">XXX</h3>
+								<p>MUI项目致力于构建一套跨平台组件，让其能够在网络，邮件，iOS，Android上工作。</p>
+							</div>
+							<div class="mui-col-sm-6">
+								<h3 class="mui--text-title mui--text-light">XXX</h3>
+								<p>为了帮助写出适用于电子邮件的HTML,MUI包括了一个邮件CSS库，并允许使用内联。</p>
+							</div>
+						</div>
+						<div class="space-bottom"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mui-divider"></div>
+		<div class="mui-container-fluid">
+			<div class="mui-row">
+				<div class="mui-col-sm-10 mui-col-sm-offset-1">
+					<div class="space-top"></div>
+					<h2>XXXX</h2>
+					<div class="mui-row">
+						<div class="mui-col-sm-9">
+							<p>xxx</p>
+							<ul class="mui-list--inline">
+								<li><strong>UI/UX</strong></li>
+								<li><strong>ReactJS</strong></li>
+								<li><strong>WebComponents</strong></li>
+								<li><strong>iOS</strong></li>
+								<li><strong>Android</strong></li>
+							</ul>
+							<p>
 
-hello world!
+								如果您想要参与这个项目，您可以发送一封电子邮件到或者在Github上的issue中发出请求.
 
+							</p>
+						</div>
+					</div>
+					<div class="space-bottom"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<footer id="footer">
+		<div class="mui-container-fluid">
+			<br> Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+		</div>
+	</footer>
 </body>
+<script src="//cdn.muicss.com/mui-0.9.7/js/mui.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/index.js"></script>
 </html>
