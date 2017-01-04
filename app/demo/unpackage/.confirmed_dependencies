@@ -1,0 +1,43 @@
+{
+	"index.html": {
+		"resources": [
+			"css/common.css",
+			"js/update.js",
+			"js/shortcut.js",
+			"js/immersed.js"
+		],
+		"refer": [
+			"plus/device.html",
+			"about.html",
+			"plus/geolocation.html",
+			"plus/downloader.html",
+			"plus/maps.html",
+			"plus/share.html",
+			"plus/njs.html",
+			"plus/barcode.html"
+		]
+	},
+	"plus/device.html": {
+		"resources": [
+			"js/common.js"
+		]
+	},
+	"about.html": {
+		"resources": [
+			"img/qr.png"
+		]
+	},
+	"plus/share.html": {
+		"resources": [
+			"img/add.png"
+		]
+	},
+	"plus/barcode.html": {
+		"resources": [
+			"img/barcode.png"
+		],
+		"refer": [
+			"plus/barcode_scan.html"
+		]
+	}
+}
