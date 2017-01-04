@@ -6,11 +6,89 @@
     <title></title>
     <script src="js/mui.min.js"></script>
     <link href="css/mui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
+    <style type="text/css">
+    	/*点击变蓝色高亮*/
+		.mui-table-view-cell.mui-active{
+			background-color: #0062CC;
+		}
+    </style>
 </head>
 <body>
-	
+	<!-- 主界面菜单同时移动 -->
+	    <!-- 侧滑导航根容器 -->
+	    <div class="mui-off-canvas-wrap mui-draggable">
+	        <!-- 主页面容器 -->
+	        <div class="mui-inner-wrap">
+	            <!-- 菜单容器 -->
+	            <aside class="mui-off-canvas-left" id="offCanvasSide">
+	                <div class="mui-scroll-wrapper">
+	                    <div class="mui-scroll">
+	                        <!-- 菜单具体展示内容 -->
+	                        <ul class="mui-table-view">
+							    <li class="mui-table-view-cell">Item 1</li>
+							    <li class="mui-table-view-cell">Item 2</li>
+							    <li class="mui-table-view-cell">Item 3</li>
+							</ul>
+	                    </div>
+	                </div>
+	            </aside>
+	            <!-- 主页面标题 -->
+	            <header class="mui-bar mui-bar-nav">
+	            	<div class="mui-content">
+					    <div class="mui-row">
+					        <div class="mui-col-sm-2">
+					            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+					        </div>
+					        <div class="mui-col-sm-8">
+					        	<div class="mui-input-row mui-search">
+								    <input type="search" class="mui-input-clear" placeholder="">
+								</div>
+					        </div>
+					        <div class="mui-col-sm-2">
+					        	<span class="mui-icon mui-icon-flag"></span>
+					        </div>
+					    </div>
+					</div>
+	                
+	                <h1 class="mui-title">标题</h1>
+	            </header>
+	            <nav class="mui-bar mui-bar-tab">
+	    		    <a class="mui-tab-item">
+	    		        <span class="mui-icon mui-icon-flag"></span>
+	    		        <span class="mui-tab-label">我要交易</span>
+	    		    </a>
+	    		    <a class="mui-tab-item">
+	    		        <span class="mui-icon mui-icon-home"></span>
+	    		        <span class="mui-tab-label">我要开店</span>
+	    		    </a>
+	    		    <a class="mui-tab-item">
+	    		        <span class="mui-icon mui-icon-star"></span>
+	    		        <span class="mui-tab-label">我的收藏</span>
+	    		    </a>
+	    		</nav>
+	            <!-- 主页面内容容器 -->
+	            <div class="mui-content mui-scroll-wrapper">
+	                <div class="mui-scroll">
+	                    <!-- 主界面具体展示内容 -->
+	                    <div class="mui-slider">
+						  <div class="mui-slider-group mui-slider-loop">
+						    <!--支持循环，需要重复图片节点-->
+						    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/4.jpg" /></a></div>
+						    <div class="mui-slider-item"><a href="#"><img src="img/1.jpg" /></a></div>
+						    <div class="mui-slider-item"><a href="#"><img src="img/2.jpg" /></a></div>
+						    <div class="mui-slider-item"><a href="#"><img src="img/3.jpg" /></a></div>
+						    <div class="mui-slider-item"><a href="#"><img src="img/4.jpg" /></a></div>
+						    <!--支持循环，需要重复图片节点-->
+						    <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="img/1.jpg" /></a></div>
+						  </div>
+						</div>
+	                </div>
+	            </div>
+	       	 <div class="mui-off-canvas-backdrop"></div>
+	        </div>
+	    </div>
 </body>
+<script type="text/javascript" charset="utf-8">
+  	mui.init();
+</script>
 </html>
