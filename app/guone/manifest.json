@@ -195,7 +195,16 @@
 			"index.html": {
 				"resources": [
 					"js/mui.min.js",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"img/2.jpg",
+					"css/app.css",
+					"img/60x60.gif",
+					"img/1.jpg",
+					"fonts/mui.ttf",
+					"css/font-awesome.min.css",
+					"img/4.jpg",
+					"img/3.jpg",
+					"fonts/fontawesome-webfont.woff2"
 				],
 				"refer": [],
 				"priority": 0
@@ -203,7 +212,6 @@
 		},
 		"idle": {
 			"resources": [
-				"fonts/mui.ttf",
 				"js/mui.js",
 				"css/mui.css"
 			]

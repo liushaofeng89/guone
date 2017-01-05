@@ -8,11 +8,11 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<!--标准mui.css-->
-		<link rel="stylesheet" href="css/mui.min.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/mui.min.css">
 		<!--App自定义的css-->
-		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/app.css"/>
 		<style>
+			
 			.title{
 				margin: 20px 15px 10px;
 				color: #6d6d72;
@@ -49,34 +49,21 @@
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			<div class="mui-content">
-			    <div class="mui-row">
-			        <div class="mui-col-sm-1">
-			            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
-			        </div>
-			        <div class="mui-col-sm-10">
-			        	<div class="mui-input-row mui-search">
-						    <input type="search" class="mui-input-clear" placeholder="">
-						</div>
-			        </div>
-			        <div class="mui-col-sm-1" style="padding-left: 10px;color: #ababab;">
-			        	<i class="mui-icon fa fa-camera"></i>
-			        </div>
-			    </div>
-			</div>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">底部选项卡-div模式</h1>
 		</header>
 		<nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item mui-active" href="#tabbar">
-				<span class="mui-icon mui-icon-flag"></span>
-		        <span class="mui-tab-label">我要交易</span>
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
 			</a>
 			<a class="mui-tab-item" href="#tabbar-with-chat">
-				<span class="mui-icon mui-icon-home"></span>
-		        <span class="mui-tab-label">我要开店</span>
+				<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+				<span class="mui-tab-label">消息</span>
 			</a>
 			<a class="mui-tab-item" href="#tabbar-with-contact">
-				<span class="mui-icon mui-icon-star"></span>
-		        <span class="mui-tab-label">我的收藏</span>
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">通讯录</span>
 			</a>
 			<a class="mui-tab-item" href="#tabbar-with-map">
 				<span class="mui-icon mui-icon-gear"></span>
@@ -85,121 +72,13 @@
 		</nav>
 		<div class="mui-content">
 			<div id="tabbar" class="mui-control-content mui-active">
-				<div id="slider" class="mui-slider">
-					<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-						<a class="mui-control-item" href="#item1mobile">
-							木雕
-						</a>
-						<a class="mui-control-item" href="#item2mobile">
-							竹雕
-						</a>
-						<a class="mui-control-item" href="#item3mobile">
-							牙雕
-						</a>
-						<a class="mui-control-item" href="#item4mobile">
-							瓷雕
-						</a>
-						<a class="mui-control-item" href="#item5mobile">
-							字画
-						</a>
-						<a class="mui-control-item" href="#item6mobile">
-							玉石
-						</a>
-					</div>
-					<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>
-					<div class="mui-slider-group">
-						<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
-							<div id="scroll1" class="mui-scroll-wrapper">
-								<div class="mui-scroll">
-								<ul class="mui-table-view">
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-1
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-2
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-3
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-4
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-5
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-6
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-7
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-8
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-9
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-10
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-11
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-12
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-13
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-14
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-15
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-16
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-17
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-18
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-19
-									</li>
-									<li class="mui-table-view-cell">
-										第一个选项卡子项-20
-									</li>
-								</ul>
-							</div>
-							</div>
-						</div>
-						<div id="item2mobile" class="mui-slider-item mui-control-content">
-							<div id="scroll2" class="mui-scroll-wrapper">
-								<div class="mui-scroll">
-									<div class="mui-loading">
-										<div class="mui-spinner">
-										</div>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-						<div id="item3mobile" class="mui-slider-item mui-control-content">
-							<div id="scroll3" class="mui-scroll-wrapper">
-								<div class="mui-scroll">
-									<div class="mui-loading">
-										<div class="mui-spinner">
-										</div>
-									</div>
-								</div>
-							</div>
-	
-						</div>
-					</div>
-				</div>
+				<div class="title">这是div模式选项卡中的第1个子页面.</div>
+				<div class="title">何谓div模式的选项卡？
+					其实就是通过DIV模拟一个独立页面，通过DIV的显示、隐藏模拟不同页面的切换，典型的SPA模式；</div>
+				<div class="title">
+					这种模式适合简单业务系统，因为每个选项卡内容要写在一个DIV中，
+					若逻辑复杂，会导致当前页面DOM结构繁杂，造成webview响应缓慢，甚至崩溃；
+					因此若系统较复杂，需要下拉刷新等操作，推荐使用webview模式的选项卡；</div>
 			</div>
 			<div id="tabbar-with-chat" class="mui-control-content">
 				<div class="title">这是div模式选项卡中的第2个子页面，该页面展示一个消息列表</div>
@@ -235,7 +114,7 @@
 					<div class="mui-slider-cell">
 						<div class="oa-contact-cell mui-table">
 							<div class="oa-contact-avatar mui-table-cell">
-								<img src="img/60x60.gif" />
+								<img src="../images/60x60.gif" />
 							</div>
 							<div class="oa-contact-content mui-table-cell">
 								<div class="mui-clearfix">
@@ -253,7 +132,7 @@
 					<div class="mui-slider-cell">
 						<div class="oa-contact-cell mui-table">
 							<div class="oa-contact-avatar mui-table-cell">
-								<img src="img/60x60.gif" />
+								<img src="../images/60x60.gif" />
 							</div>
 							<div class="oa-contact-content mui-table-cell">
 								<div class="mui-clearfix">
@@ -271,7 +150,7 @@
 					<div class="mui-slider-cell">
 						<div class="oa-contact-cell mui-table">
 							<div class="oa-contact-avatar mui-table-cell">
-								<img src="img/60x60.gif" />
+								<img src="../images/60x60.gif" />
 							</div>
 							<div class="oa-contact-content mui-table-cell">
 								<div class="mui-clearfix">
@@ -289,7 +168,7 @@
 					<div class="mui-slider-cell">
 						<div class="oa-contact-cell mui-table">
 							<div class="oa-contact-avatar mui-table-cell">
-								<img src="img/60x60.gif" />
+								<img src="../images/60x60.gif" />
 							</div>
 							<div class="oa-contact-content mui-table-cell">
 								<div class="mui-clearfix">
@@ -307,7 +186,7 @@
 					<div class="mui-slider-cell">
 						<div class="oa-contact-cell mui-table">
 							<div class="oa-contact-avatar mui-table-cell">
-								<img src="img/60x60.gif" />
+								<img src="../images/60x60.gif" />
 							</div>
 							<div class="oa-contact-content mui-table-cell">
 								<div class="mui-clearfix">
@@ -359,7 +238,7 @@
 			</div>
 		</div>
 	</body>
-	<script src="js/mui.min.js"></script>
+	<script src="../js/mui.min.js"></script>
 	<script>
 		mui.init({
 			swipeBack:true //启用右滑关闭功能
