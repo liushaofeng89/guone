@@ -22,6 +22,7 @@
 			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
 				background-color: #fff;
 			}
+			
 		</style>
 	</head>
 
@@ -31,7 +32,7 @@
 			<h1 class="mui-title">藏品分类</h1>
 		</header>
 		
-		<div class="mui-content mui-row mui-fullscreen">
+		<div class="mui-content mui-row ">
 			<div class="mui-col-xs-3">
 				<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
 				</div>
@@ -63,20 +64,40 @@
 			
 			var subCategoryHtml = [];
 			
-			subCategoryHtml.push('<div id="suggest" class="mui-control-content"><ul class="mui-table-view">');
-			subCategoryHtml.push('<li class="mui-table-view-cell">翡翠</li>');
-			subCategoryHtml.push('<li class="mui-table-view-cell">宋古瓷</li>');
+			subCategoryHtml.push('<div id="suggest" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
+			subCategoryHtml.push('<div class="mui-card-header">推荐</div>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">翡翠</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/feicui.png"><div class="mui-media-body">宋古瓷</div></a>');
+			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('</ul></div>');
 				
-			subCategoryHtml.push('<div id="jade" class="mui-control-content"><ul class="mui-table-view">');
-			subCategoryHtml.push('<li class="mui-table-view-cell">翡翠</li>');
-			subCategoryHtml.push('<li class="mui-table-view-cell">玛瑙</li>');
-			subCategoryHtml.push('<li class="mui-table-view-cell">钻石</li>');
+			subCategoryHtml.push('<div id="jade" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
+			subCategoryHtml.push('<div class="mui-card-header">瓷器</div>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">元青花</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/feicui.png"><div class="mui-media-body">翡翠</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi2.png"><div class="mui-media-body">宋瓷</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi3.png"><div class="mui-media-body">明瓷</div></a>');
+			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('</ul></div>');
 			
-			subCategoryHtml.push('<div id="china" class="mui-control-content"><ul class="mui-table-view">');
-			subCategoryHtml.push('<li class="mui-table-view-cell">元青花</li>');
-			subCategoryHtml.push('<li class="mui-table-view-cell">宋古瓷</li>');
+			subCategoryHtml.push('<div id="china" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
+			subCategoryHtml.push('<div class="mui-card-header">元宋</div>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">元青花</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi2.png"><div class="mui-media-body">宋瓷</div></a>');
+			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('</ul></div>');
 			
 			contents.innerHTML = subCategoryHtml.join('');
