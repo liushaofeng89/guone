@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Category</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		
+		<style>
+			.mui-row.mui-fullscreen>[class*="mui-col-"] {
+				height: 100%;
+			}
+			.mui-col-xs-3,
+			.mui-control-content {
+				overflow-y: auto;
+				height: 100%;
+			}
+			.mui-segmented-control .mui-control-item {
+				line-height: 50px;
+				width: 100%;
+			}
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				background-color: #fff;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">藏品分类</h1>
+		</header>
+		
+		<div class="mui-content mui-row ">
+			<div class="mui-col-xs-3">
+				<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+				</div>
+			</div>
+			<div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;">
+				<div id="item1" class="mui-control-content mui-active">
+				</div>
+				<div id="item2" class="mui-control-content">
+				</div>
+				<div id="item3" class="mui-control-content">
+				</div>
+			</div>
+		</div>
+		
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			var controls = document.getElementById("segmentedControls");
+			var contents = document.getElementById("segmentedControlContents");
+			var mainCategoryHtml = [];
+			
+			mainCategoryHtml.push('<a class="mui-control-item" href="#suggest">推荐分类</a>');
+			mainCategoryHtml.push('<a class="mui-control-item" href="#jade">玉翠珠宝</a>');
+			mainCategoryHtml.push('<a class="mui-control-item" href="#china">瓷器</a>');
+			
+			controls.innerHTML = mainCategoryHtml.join('');
+			
+			var subCategoryHtml = [];
+			
+			subCategoryHtml.push('<div id="suggest" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
+			subCategoryHtml.push('<div class="mui-card-header">推荐</div>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">翡翠</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/feicui.png"><div class="mui-media-body">宋古瓷</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('</ul></div>');
+				
+			subCategoryHtml.push('<div id="jade" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
+			subCategoryHtml.push('<div class="mui-card-header">瓷器</div>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">元青花</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/feicui.png"><div class="mui-media-body">翡翠</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi2.png"><div class="mui-media-body">宋瓷</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi3.png"><div class="mui-media-body">明瓷</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('</ul></div>');
+			
+			subCategoryHtml.push('<div id="china" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
+			subCategoryHtml.push('<div class="mui-card-header">元宋</div>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">元青花</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi2.png"><div class="mui-media-body">宋瓷</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('</ul></div>');
+			
+			contents.innerHTML = subCategoryHtml.join('');
+			 //默认选中第一个
+			controls.querySelector('.mui-control-item').classList.add('mui-active');
+			contents.querySelector('.mui-control-content').classList.add('mui-active');
+			
+		</script>
+	</body>
+
+</html>
