@@ -56,47 +56,65 @@
 			var contents = document.getElementById("segmentedControlContents");
 			var mainCategoryHtml = [];
 			
-			mainCategoryHtml.push('<a class="mui-control-item" href="#suggest">推荐分类</a>');
-			mainCategoryHtml.push('<a class="mui-control-item" href="#jade">玉翠珠宝</a>');
-			mainCategoryHtml.push('<a class="mui-control-item" href="#china">瓷器</a>');
+			mainCategoryHtml.push('<a class="mui-control-item" href="#suggest">玉翠珠宝</a>');
+			mainCategoryHtml.push('<a class="mui-control-item" href="#jade">紫纱陶瓷</a>');
+			mainCategoryHtml.push('<a class="mui-control-item" href="#china">书画篆刻</a>');
 			
 			controls.innerHTML = mainCategoryHtml.join('');
 			
 			var subCategoryHtml = [];
 			
 			subCategoryHtml.push('<div id="suggest" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
-			subCategoryHtml.push('<div class="mui-card-header">推荐</div>');
+			subCategoryHtml.push('<div class="mui-card-header">玉翠珠宝</div>');
 			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
-			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">翡翠</div></a>');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/12.png"><div class="mui-media-body">和田玉</div></a>');
 			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
-			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/feicui.png"><div class="mui-media-body">宋古瓷</div></a>');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/7.png"><div class="mui-media-body">翡翠</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/5.png"><div class="mui-media-body">琥珀</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/3.png"><div class="mui-media-body">天珠</div></a>');
 			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('</ul></div>');
 				
 			subCategoryHtml.push('<div id="jade" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
-			subCategoryHtml.push('<div class="mui-card-header">瓷器</div>');
+			subCategoryHtml.push('<div class="mui-card-header">紫纱陶瓷</div>');
 			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
-			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">元青花</div></a>');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/cqqi2.png"><div class="mui-media-body">紫纱</div></a>');
 			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
-			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/feicui.png"><div class="mui-media-body">翡翠</div></a>');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">陶器</div></a>');
 			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
-			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi2.png"><div class="mui-media-body">宋瓷</div></a>');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi3.png"><div class="mui-media-body">残片</div></a>');
 			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
-			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi3.png"><div class="mui-media-body">明瓷</div></a>');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/15.png"><div class="mui-media-body">瓷器</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/wenwan_qita.png"><div class="mui-media-body">其它</div></a>');
 			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('</ul></div>');
 			
 			subCategoryHtml.push('<div id="china" class="mui-control-content"><ul class="mui-table-view mui-grid-view">');
-			subCategoryHtml.push('<div class="mui-card-header">元宋</div>');
+			subCategoryHtml.push('<div class="mui-card-header">书画篆刻</div>');
 			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
-			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi.png"><div class="mui-media-body">元青花</div></a>');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/11.png"><div class="mui-media-body">国画</div></a>');
 			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
-			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/ciqi2.png"><div class="mui-media-body">宋瓷</div></a>');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/10.png"><div class="mui-media-body">书法</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/9.png"><div class="mui-media-body">信札</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/9.png"><div class="mui-media-body">篆刻</div></a>');
+			subCategoryHtml.push('</li>');
+			subCategoryHtml.push('<li class="mui-table-view-cell mui-media">');
+			subCategoryHtml.push('<a href="#"><img class="mui-media-object" src="../../img/category/8.png"><div class="mui-media-body">其它</div></a>');
 			subCategoryHtml.push('</li>');
 			subCategoryHtml.push('</ul></div>');
 			
