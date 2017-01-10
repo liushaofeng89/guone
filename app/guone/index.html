@@ -12,49 +12,47 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<!--App自定义的css-->
 		<style>
-			  .title+.content{
-			  	margin: 10px 15px 35px;
-			  	color: #bbb;
-			  	text-indent: 1em;
-			  	font-size: 14px;
-			  	line-height: 24px;
-			  }
-			  .mui-table-view{
-			  	margin-bottom: 35px;
-			  }
-			.title{
+			.title+.content {
+				margin: 10px 15px 35px;
+				color: #bbb;
+				text-indent: 1em;
+				font-size: 14px;
+				line-height: 24px;
+			}
+			
+			.title {
 				margin: 20px 15px 10px;
 				color: #6d6d72;
 				font-size: 15px;
 			}
+			
 			.mui-control-content {
 				background-color: white;
-				min-height: 215px;
+				min-height: 290px;
 			}
 		</style>
 	</head>
 
 	<body>
 		<!-- 主界面菜单同时移动 -->
-	    <!-- 侧滑导航根容器 -->
-	    <div class="mui-off-canvas-wrap mui-draggable">
-	        <!-- 主页面容器 -->
-	        <div class="mui-inner-wrap">
-	            <!-- 菜单容器 -->
-	            <aside class="mui-off-canvas-left" id="offCanvasSide">
-	                <div class="mui-scroll-wrapper">
-	                    <div class="mui-scroll">
-	                        <div class="title">侧滑导航</div>
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 菜单容器 -->
+				<aside class="mui-off-canvas-left" id="offCanvasSide">
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<div class="title">侧滑导航</div>
 							<div class="content">
-								这是首页侧滑导航示例，你可以在这里放置任何内容；关闭侧滑菜单有多种方式：
-								1.点击本侧滑菜单页之外的任意位置;
-								2.点击如下红色按钮<span id="android-only">；3.Android手机按back键；4.Android手机按menu键
+								这是首页侧滑导航示例，你可以在这里放置任何内容；关闭侧滑菜单有多种方式： 1.点击本侧滑菜单页之外的任意位置; 2.点击如下红色按钮
+								<span id="android-only">；3.Android手机按back键；4.Android手机按menu键
 								</span>。
 								<p style="margin: 10px 15px;">
 									<button id="close-btn" type="button" class="mui-btn mui-btn-danger mui-btn-block" style="padding: 5px 20px;">关闭侧滑菜单</button>
 								</p>
 							</div>
-	                        <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted" style="color: #ddd;">
+							<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted" style="color: #ddd;">
 								<li class="mui-table-view-cell">
 									<a class="mui-navigate-right" open-type="common" href="feedback.html">
 										用户反馈
@@ -76,51 +74,51 @@
 									</a>
 								</li>
 							</ul>
-	                    </div>
-	                </div>
-	            </aside>
-	            <!-- 主页面标题 -->
-	            <header class="mui-bar mui-bar-nav">
+						</div>
+					</div>
+				</aside>
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav">
 					<div class="mui-content">
-					    <div class="mui-row">
-					        <div class="mui-col-xs-1 mui-col-sm-1">
-					            <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
-					        </div>
-					        <div class="mui-col-xs-10 mui-col-sm-10">
-					        	<div class="mui-input-row mui-search">
-								    <input id="searchName" type="search" class="mui-input-clear" placeholder="">
+						<div class="mui-row">
+							<div class="mui-col-xs-1 mui-col-sm-1">
+								<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+							</div>
+							<div class="mui-col-xs-10 mui-col-sm-10">
+								<div class="mui-input-row mui-search">
+									<input id="searchName" type="search" class="mui-input-clear" placeholder="">
 								</div>
-					        </div>
-					        <div class="mui-col-xs-1 mui-col-sm-1" style="padding-left: 10px;color: #ababab;">
-					        	<i class="mui-icon fa fa-camera"></i>
-					        </div>
-					    </div>
+							</div>
+							<div class="mui-col-xs-1 mui-col-sm-1" style="padding-left: 10px;color: #ababab;">
+								<i class="mui-icon fa fa-camera"></i>
+							</div>
+						</div>
 					</div>
 				</header>
-	            <nav class="mui-bar mui-bar-tab">
+				<nav class="mui-bar mui-bar-tab">
 					<a class="mui-tab-item mui-active" href="#slider">
 						<span class="mui-icon mui-icon-flag"></span>
-				        <span class="mui-tab-label">我要交易</span>
+						<span class="mui-tab-label">我要交易</span>
 					</a>
 					<a class="mui-tab-item" href="#tabbar-with-chat">
 						<span class="mui-icon mui-icon-home"></span>
-				        <span class="mui-tab-label">我要开店</span>
+						<span class="mui-tab-label">我要开店</span>
 					</a>
 					<a class="mui-tab-item" href="#tabbar-with-contact">
 						<span class="mui-icon mui-icon-star"></span>
-				        <span class="mui-tab-label">我的收藏</span>
+						<span class="mui-tab-label">我的收藏</span>
 					</a>
 				</nav>
 				<div class="mui-content">
-					
+
 					<div id="slider" class="mui-slider mui-control-content mui-active">
 						<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-							<a class="mui-control-item" href="#item1mobile">木雕    </a>
-                            <a class="mui-control-item" href="#item2mobile">竹雕    </a>
-                            <a class="mui-control-item" href="#item3mobile">牙雕    </a>
-                            <a class="mui-control-item" href="#item4mobile">瓷雕    </a>
-                            <a class="mui-control-item" href="#item5mobile">字画    </a>
-                            <a class="mui-control-item" href="html/category/category.html">更多</a>
+							<a class="mui-control-item" href="#item1mobile">木雕 </a>
+							<a class="mui-control-item" href="#item2mobile">竹雕 </a>
+							<a class="mui-control-item" href="#item3mobile">牙雕 </a>
+							<a class="mui-control-item" href="#item4mobile">瓷雕 </a>
+							<a class="mui-control-item" href="#item5mobile">字画 </a>
+							<a class="mui-control-item" href="html/category/category.html">更多</a>
 						</div>
 						<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>
 						<div class="mui-slider-group">
@@ -221,58 +219,102 @@
 						</div>
 					</div>
 
-
 					<div id="tabbar-with-chat" class="mui-control-content">
 						<ul class="mui-table-view mui-table-view-chevron">
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 1</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 2</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 3</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 4</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 5</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 6</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 7</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 8</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 9</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 10</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 11</a></li>
-							<li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 12</a></li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 1</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 2</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 3</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 4</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 5</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 6</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 7</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 8</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 9</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 10</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 11</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="" class="mui-navigate-right">Item 12</a>
+							</li>
 						</ul>
 					</div>
-					
+
 					<div id="tabbar-with-contact" class="mui-control-content">
 						<ul class="mui-table-view mui-grid-view mui-grid-9">
-				            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-				                    <span class="mui-icon mui-icon-home"></span>
-				                    <div class="mui-media-body">木雕</div></a></li>
-				            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-				                    <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
-				                    <div class="mui-media-body">竹雕</div></a></li>
-				            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-				                    <span class="mui-icon mui-icon-chatbubble"></span>
-				                    <div class="mui-media-body">牙雕</div></a></li>
-				            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-				                    <span class="mui-icon mui-icon-location"></span>
-				                    <div class="mui-media-body">瓷雕</div></a></li>
-				            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-				                    <span class="mui-icon mui-icon-search"></span>
-				                    <div class="mui-media-body">字画</div></a></li>
-				            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-				                    <span class="mui-icon mui-icon-phone"></span>
-				                    <div class="mui-media-body">玉石</div></a></li>
-				            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-				                    <span class="mui-icon mui-icon-more"></span>
-				                    <div class="mui-media-body">更多</div></a></li>
-				        </ul> 
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-home"></span>
+									<div class="mui-media-body">木雕</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+									<div class="mui-media-body">竹雕</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-chatbubble"></span>
+									<div class="mui-media-body">牙雕</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-location"></span>
+									<div class="mui-media-body">瓷雕</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-search"></span>
+									<div class="mui-media-body">字画</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-phone"></span>
+									<div class="mui-media-body">玉石</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-more"></span>
+									<div class="mui-media-body">更多</div>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-	       	 <div class="mui-off-canvas-backdrop"></div>
-	        </div>
-	    </div>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
 	</body>
 	<script src="js/mui.min.js"></script>
 	<script>
 		mui.init({
-			swipeBack:true //启用右滑关闭功能
+			swipeBack: true //启用右滑关闭功能
 		});
 
 		mui.ready(function() {
@@ -282,8 +324,8 @@
 					mui.openWindow({
 						url: "page/guone_list.html",
 						id: "guonelist",
-						show : {
-							duration : 300
+						show: {
+							duration: 300
 						},
 						extras: { //extras里面的就是参数了
 							searchValue: value
@@ -293,4 +335,5 @@
 			}, false);
 		});
 	</script>
+
 </html>
