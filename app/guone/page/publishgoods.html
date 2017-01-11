@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" class="feedback">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>问题反馈</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/feedback.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-close mui-pull-left"></a>
+			<button id="submit" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right"></button>
+			<h1 class="mui-title">发布拍品</h1>
+		</header>
+		<div class="mui-content">
+			<div class="row mui-input-row">
+				<p class="mui-pull-left">
+					<a href="#popover">
+						存为草稿
+					</a>
+				</p>
+				<p class="mui-pull-right">
+					<a href="#popover">
+						下一步
+					</a>
+				</p>
+			</div>
+			<p></p>
+			<div class="row mui-input-row">
+				<textarea id='question' class="mui-input-clear question" placeholder="我的拍品描述..."></textarea>
+			</div>
+			<p></p>
+			<div id='image-list' class="row image-list"></div>
+			<p></p>
+			<div class="row mui-input-row">
+				<p class="mui-pull-left">
+					鉴定证书
+				</p>
+				<p class="mui-pull-right">
+					<a href="#popover">
+						下一步
+					</a>
+				</p>
+			</div>
+			<p class="mui-pull-right">下一步即表示同意
+				<< <a href="#">
+					guone服务协议
+					</a>>>
+			</p>
+		</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src=" js/feedback.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('.mui-scroll-wrapper').scroll();
+		</script>
+	</body>
+
+</html>
