@@ -28,7 +28,7 @@
 			
 			.mui-control-content {
 				background-color: white;
-				min-height: 290px;
+				min-height: 660px;
 			}
 		</style>
 	</head>
@@ -46,8 +46,7 @@
 							<div class="title">侧滑导航</div>
 							<div class="content">
 								这是首页侧滑导航示例，你可以在这里放置任何内容；关闭侧滑菜单有多种方式： 1.点击本侧滑菜单页之外的任意位置; 2.点击如下红色按钮
-								<span id="android-only">；3.Android手机按back键；4.Android手机按menu键
-								</span>。
+								<span id="android-only">；3.Android手机按back键；4.Android手机按menu键</span>。
 								<p style="margin: 10px 15px;">
 									<button id="close-btn" type="button" class="mui-btn mui-btn-danger mui-btn-block" style="padding: 5px 20px;">关闭侧滑菜单</button>
 								</p>
@@ -122,53 +121,39 @@
 						</div>
 						<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>
 						<div class="mui-slider-group">
-							<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
-								<div id="slider" class="mui-slider">
+							<div id="item1mobile" class="mui-slider-item mui-active">
+								<div id="img-slider" class="mui-slider" >
 									<div class="mui-slider-group mui-slider-loop">
 										<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
 										<div class="mui-slider-item mui-slider-item-duplicate">
 											<a href="#">
-												<img src="img/4.jpg">
-												<p class="mui-slider-title">静静看这世界</p>
+												<img src="img/3.jpg">
 											</a>
 										</div>
+										<!-- 第一张 -->
 										<div class="mui-slider-item">
 											<a href="#">
 												<img src="img/1.jpg">
-												<p class="mui-slider-title">幸福就是可以一起睡觉</p>
 											</a>
 										</div>
+										<!-- 第二张 -->
 										<div class="mui-slider-item">
 											<a href="#">
 												<img src="img/2.jpg">
-												<p class="mui-slider-title">想要一间这样的木屋，静静的喝咖啡</p>
 											</a>
 										</div>
+										<!-- 第三张 -->
 										<div class="mui-slider-item">
 											<a href="#">
 												<img src="img/3.jpg">
-												<p class="mui-slider-title">Color of SIP CBD</p>
-											</a>
-										</div>
-										<div class="mui-slider-item">
-											<a href="#">
-												<img src="img/4.jpg">
-												<p class="mui-slider-title">Color of SIP CBD</p>
 											</a>
 										</div>
 										<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
 										<div class="mui-slider-item mui-slider-item-duplicate">
 											<a href="#">
 												<img src="img/1.jpg">
-												<p class="mui-slider-title">幸福就是可以一起睡觉</p>
 											</a>
 										</div>
-									</div>
-									<div class="mui-slider-indicator mui-text-right">
-										<div class="mui-indicator mui-active"></div>
-										<div class="mui-indicator"></div>
-										<div class="mui-indicator"></div>
-										<div class="mui-indicator"></div>
 									</div>
 								</div>
 							</div>
@@ -333,6 +318,12 @@
 					})
 				}
 			}, false);
+		});
+		
+		
+		//我要交易中导航图的自动播放
+		mui("#img-slider").slider({
+			interval: 3000
 		});
 	</script>
 
