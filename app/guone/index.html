@@ -97,13 +97,13 @@
 				<nav class="mui-bar mui-bar-tab">
 					<a class="mui-tab-item mui-active" href="#slider">
 						<span class="mui-icon mui-icon-flag"></span>
-						<span class="mui-tab-label">我要交易</span>
+						<span class="mui-tab-label">我的店铺</span>
 					</a>
-					<a class="mui-tab-item" href="#tabbar-with-chat">
+					<a id="pushguone" class="mui-tab-item" href="#slider">
 						<span class="mui-icon mui-icon-home"></span>
-						<span class="mui-tab-label">我要开店</span>
+						<span class="mui-tab-label">上传藏品</span>
 					</a>
-					<a class="mui-tab-item" href="#tabbar-with-contact">
+					<a id="myBestLove" class="mui-tab-item" href="#slider">
 						<span class="mui-icon mui-icon-star"></span>
 						<span class="mui-tab-label">我的收藏</span>
 					</a>
@@ -117,13 +117,13 @@
 							<a class="mui-control-item" href="#item3mobile">牙雕 </a>
 							<a class="mui-control-item" href="#item4mobile">瓷雕 </a>
 							<a class="mui-control-item" href="#item5mobile">字画 </a>
-							<a class="mui-control-item" href="html/category/category.html">更多</a>
+							<a class="mui-control-item" id="morecategory" href="html/category/category.html">更多</a>
 						</div>
 						<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>
 						<div class="mui-slider-group">
 							<div id="item1mobile" class="mui-slider-item mui-active">
 								<div id="img-slider" class="mui-slider" >
-									<div class="mui-slider-group mui-slider-loop">
+									<div class="mui-slider-group mui-slider-loop" id="pictureslider">
 										<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
 										<div class="mui-slider-item mui-slider-item-duplicate">
 											<a href="#">
@@ -325,6 +325,40 @@
 		mui("#img-slider").slider({
 			interval: 3000
 		});
+		
+		document.body.querySelector('#morecategory').addEventListener("tap", function(e) {
+					mui.openWindow({
+						url: "html/category/category.html",
+						id: "category"
+					})
+					
+			}, false);
+			
+			document.body.querySelector('#pictureslider').addEventListener("tap", function(e) {
+					mui.openWindow({
+						url: "html/guonedetailinfo/detailinfo.html",
+						id: "detailinfo"
+					})
+				
+			}, false);
+			
+			document.body.querySelector('#myBestLove').addEventListener("tap", function(e) {
+					mui.openWindow({
+						url: "page/my_best_love.html",
+						id: "myFavior"
+					})
+				
+			}, false);
+			
+			document.body.querySelector('#pushguone').addEventListener("tap", function(e) {
+					mui.openWindow({
+						url: "page/publishgoods.html",
+						id: "myFavior"
+					})
+				
+			}, false);
+			
+			
 	</script>
 
 </html>

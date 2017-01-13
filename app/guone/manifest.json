@@ -206,6 +206,112 @@
 					"img/3.jpg",
 					"fonts/fontawesome-webfont.woff2"
 				],
+				"refer": [
+					"html/guonedetailinfo/detailinfo.html",
+					"page/guone_list.html",
+					"html/category/category.html",
+					"page/publishgoods.html",
+					"page/my_best_love.html"
+				],
+				"priority": 0
+			},
+			"html/guonedetailinfo/detailinfo.html": {
+				"resources": [
+					"img/detailinfo/icon (30).jpg",
+					"img/detailinfo/icon (31).jpg",
+					"img/detailinfo/icon (29).jpg",
+					"img/detailinfo/icon (28).jpg",
+					"img/detailinfo/icon (27).jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"page/guone_list.html": {
+				"resources": [
+					"img/detailinfo/icon (4).jpg",
+					"js/app.js",
+					"img/detailinfo/icon (6).jpg",
+					"img/detailinfo/icon (5).jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/detailinfo/icon (7).jpg",
+					"img/detailinfo/icon (3).jpg",
+					"img/detailinfo/icon (2).jpg",
+					"img/detailinfo/icon (1).jpg",
+					"img/detailinfo/icon (11).jpg",
+					"img/detailinfo/icon (14).jpg",
+					"img/detailinfo/icon (12).jpg",
+					"img/detailinfo/icon (8).jpg",
+					"img/detailinfo/icon (15).jpg",
+					"img/detailinfo/icon (9).jpg",
+					"img/detailinfo/icon (10).jpg",
+					"img/detailinfo/icon (13).jpg",
+					"img/detailinfo/icon (46).jpg",
+					"img/detailinfo/icon (42).jpg",
+					"img/detailinfo/icon (18).jpg",
+					"img/detailinfo/icon (37).jpg",
+					"img/detailinfo/icon (51).jpg",
+					"img/detailinfo/icon (64).jpg",
+					"img/detailinfo/icon (54).jpg",
+					"img/detailinfo/icon (27).jpg"
+				],
+				"refer": [
+					"html/guonedetailinfo/detailinfo.html"
+				],
+				"priority": 0
+			},
+			"html/category/category.html": {
+				"resources": [
+					"img/category/wenwan_qita.png",
+					"img/category/7.png",
+					"img/category/5.png",
+					"img/category/8.png",
+					"js/mui.min.js",
+					"img/category/11.png",
+					"img/category/ciqi.png",
+					"fonts/mui.ttf",
+					"img/category/3.png",
+					"css/mui.min.css",
+					"img/category/ciqi3.png",
+					"img/category/12.png",
+					"img/category/cqqi2.png",
+					"img/category/15.png",
+					"img/category/10.png",
+					"img/category/9.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"page/publishgoods.html": {
+				"resources": [
+					"css/feedback.css",
+					"js/feedback.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"page/my_best_love.html": {
+				"resources": [
+					"img/detailinfo/icon (46).jpg",
+					"img/detailinfo/icon (42).jpg",
+					"js/app.js",
+					"img/detailinfo/icon (18).jpg",
+					"js/mui.min.js",
+					"img/detailinfo/icon (37).jpg",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/detailinfo/icon (51).jpg",
+					"img/detailinfo/icon (64).jpg",
+					"img/detailinfo/icon (54).jpg",
+					"img/detailinfo/icon (27).jpg"
+				],
 				"refer": [],
 				"priority": 0
 			}
